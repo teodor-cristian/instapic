@@ -1,0 +1,61 @@
+<html ng-app="instapic">
+
+<head>
+
+    <title>Instapic</title>
+
+
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <script src="assets/js/jquery-2.1.4.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+
+    <script src="services/allposts.service.js"></script>
+    <script src="controllers/menu.controller.js"></script>
+    <script src="controllers/upload.controller.js"></script>
+    <script src="controllers/allposts.controller.js"></script>
+
+
+
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    < </head>
+
+</html>
+
+<body id="top">
+    <div class="page-wrapper">
+        <header id='header'>
+            <nav class="navbar navbar-default navbar-fixed-top tall">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#myNavbar" data-toggle="collapse" class="btn btn-default btn-lg navbar-toggle">
+                            <span class="glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand">Instapic <span class="glyphicon glyphicon-picture" aria-hidden="true"></span></a>
+                    </div>
+                    <!-- Collection of nav links and other content for toggling -->
+                    <div id="myNavbar" class="collapse navbar-collapse" ng-controller="MenuController">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/#/allposts">All Posts</a></li>
+                            <li><a href="/#/upload">Upload</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="pages_allign" ui-view></div>
+    </div>
+
+    <footer>
+        <div class="contaier">
+
+        </div>
+    </footer>
+
+</body>

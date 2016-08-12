@@ -1,0 +1,31 @@
+<div class="container upload_class" ng-controller="UploadPostController">
+    <h1>Upload your post here </h1>
+
+    <label>Username</label>
+    <div class="input-group input-group-lg my_input">
+        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-user"></span></span>
+        <input type="text" ng-model="new_post.USERNAME" title="Username" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+    </div>
+    <label>Description</label>
+    <div class="input-group input-group-lg my_input">
+        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-italic"></span></span>
+        <input type="text" ng-model="new_post.DESCRIPTION" title="Description" class="form-control" placeholder="Description" aria-describedby="sizing-addon1" id="description">
+    </div>
+
+    <div class="picture_container">
+        <div class="row">
+            <div ng-repeat="picture in pictures">
+
+                <div class="col-xs-6 col-md-3">
+                    <a class="thumbnail">
+                        <img class="picture_properties" ng-src="{{picture}}" ng-click="chosen_picture(picture)">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h1>{{!picture_no ? 'Choose a picture !' : 'You picked picture '+picture_no.substring(19, 20)}}</h1>
+
+        <form method="get" action="/#/allposts"><button ng-click="postThis(new_post)" type="submit" class="submit_btn">Submit</button></form>
+
+    </div>
+</div>

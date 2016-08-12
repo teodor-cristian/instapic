@@ -1,0 +1,12 @@
+[
+  {
+    "USERNAME": "Teodor",
+    "DESCRIPTION": "This is my app!",
+    "PICTURE_SRC": "assets/images/img_01.jpg"
+  },
+  {
+    "USERNAME": "Mihnea",
+    "DESCRIPTION": "Cool app Teo! Keep on working hard !",
+    "PICTURE_SRC": "assets/images/img_04.jpg"
+  }
+]

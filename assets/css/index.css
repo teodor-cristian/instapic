@@ -1,0 +1,69 @@
+.pages_allign{
+  margin-top: 70px;
+}
+
+.upload_class{
+  font-family: 'Pacifico', cursive;
+}
+
+.upload_class h1{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.my_input{
+  padding-top: 20px;
+}
+
+label{
+  font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+.picture_container{
+  margin-top: 30px;
+}
+
+.picture_properties:hover{
+  transform: scale(1.1,1.1);
+  transition-duration: 1s;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.thumbnail:hover{
+  border: none;
+  transition-duration: 1s;
+}
+
+.picture_properties{
+  transition-duration: 1s;
+  opacity: 0.7;
+}
+
+.submit_btn{
+  font-size: 23px;
+  float: right;
+}
+
+.submit_btn:hover{
+  background-color: #FFA500;
+  transition-duration: 1.5s;
+  transform: scale(1.5,1.5);
+  border-radius: 50%;
+  border-style: none;
+	width: 90px;
+	height: 90px;
+}
+
+.submit_btn{
+  transition-duration: 1s;
+  border-style: none;
+  background-color: transparent;
+}
+
+
+footer{
+  height: 100px;
+}

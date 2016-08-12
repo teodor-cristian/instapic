@@ -1,0 +1,16 @@
+// var stmt = db.prepare("INSERT INTO user_info VALUES (?)");
+// for (var i = 0; i < 10; i++) {
+//     stmt.run("Ipsum " + i);
+// }
+// stmt.finalize();
+
+//  var statement=db.prepare("INSERT INTO POSTS VALUES ('Mihnea','Cool app Teo! Keep on working hard !','assets/images/img_04.jpg')");
+//  statement.run();
+//  statement.finalize();
+
+//
+//   db.each("SELECT rowid AS id, info FROM user_info", function(err, row) {
+//       console.log(row.id + ": " + row.info);
+//   });
+// });
+//
